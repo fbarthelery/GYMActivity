@@ -40,6 +40,7 @@ $web_config = new GenyWebConfig();
 <body>
 <p style="margin:60px auto 0;text-align:center;display:block;"><img id='main_logo' src='images/default/<?php echo $web_config->company_index_logo ?>' /></p>
 <form id="start" action="check_login.php" method="post">
+	<input id="assertion-field" type="hidden" name="assertion" value="">
 	<h1>Login GENYMOBILE - Apps</h1>
 
 	<p>
@@ -66,6 +67,9 @@ $web_config = new GenyWebConfig();
 	<!-- Bouton de soumission habituel. Je l'ai commenté pour pouvoir afficher ma div "finish" avec la pseudo-classe :target -->
 	<p>
 		<input type="submit" value="Login" />
+	</p>
+	<p>
+		<img id="browserid-login" src="images/persona_sign_in_blue.png" alt="Login with persona" />
 	</p>
 	<!--<p>
 		<a class="submit" href="#finish">Envoyer</a> ou <a href="#start">annuler</a>
@@ -103,5 +107,6 @@ $web_config = new GenyWebConfig();
 <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
 <script src="js/chosen/chosen.jquery.js" type="text/javascript"></script>
 <script type="text/javascript"> $(".chzn-select").chosen();</script>
+<?php include_once 'browserid.php'; ?>
 </body>
 </html>

@@ -112,6 +112,7 @@ if( $is_cached === true ) {
 ?>
 
 <?php
+include_once 'browserid.php';
 include_once 'footer.php';
 ?>
 

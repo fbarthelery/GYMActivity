@@ -21,8 +21,8 @@
 
 ?>
 
-<li class="logout">
-	<a href="logout.php">
+<li class="logout" >
+	<a href="logout.php" id="logout">
 		<span class="dock_item_title">Logout</span><br/>
 		<span class="dock_item_content">Se déconnecter de l'application.</span>
 	</a>
